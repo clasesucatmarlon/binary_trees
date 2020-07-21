@@ -13,7 +13,8 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 
 	if (parent == NULL)
 		return (NULL);
-	aux = malloc(sizeof(*aux));
+
+	aux = malloc(sizeof(binary_tree_t));
 	if (aux == NULL)
 		return (NULL);
 	aux->n = value;
