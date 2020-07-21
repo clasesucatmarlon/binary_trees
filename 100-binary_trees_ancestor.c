@@ -62,5 +62,7 @@ binary_tree_t *first, const binary_tree_t *second)
 		aux_first = aux_first->parent;
 		aux_second = aux_second->parent;
 	}
-	return ((binary_tree_t *) aux_first);
+	if (depth_first >= 0 && depth_second >= 0 && aux_first == aux_second)
+		return ((binary_tree_t *) aux_first);
+	return (NULL);
 }
