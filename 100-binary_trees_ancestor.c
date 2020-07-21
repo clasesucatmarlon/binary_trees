@@ -34,7 +34,7 @@ binary_tree_t *first, const binary_tree_t *second)
 	const binary_tree_t *aux_first, *aux_second;
 	int depth_first, depth_second;
 
-	if (first == NULL || second == NULL)
+	if (!first || !second)
 		return (NULL);
 
 	aux_first = first;
