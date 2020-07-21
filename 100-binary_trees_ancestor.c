@@ -40,8 +40,8 @@ binary_tree_t *first, const binary_tree_t *second)
 	aux_first = first;
 	aux_second = second;
 
-	depth_first = binary_tree_depth(aux_first);
-	depth_second = binary_tree_depth(aux_second);
+	depth_first = (int)binary_tree_depth(aux_first);
+	depth_second = (int)binary_tree_depth(aux_second);
 
 	if (depth_first > depth_second)
 	{
